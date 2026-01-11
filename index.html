@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Report to Valen</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      height: 100%;
+      overflow-x: hidden;
+      background-color: black;
+    }
+    body {
+      background-image: url('https://i.imgur.com/rSp0lFr.jpeg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    body::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.5);
+      z-index: 0;
+    }
+    .container {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      color: white;
+      animation: fadeIn 1s ease;
+    }
+    h1 {
+      font-size: 40px;
+      margin-bottom: 5px;
+      text-shadow: 0 4px 10px rgba(0,0,0,0.7);
+    }
+    p {
+      font-size: 20px;
+      margin-bottom: 30px;
+      text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    }
+    .button-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+    }
+    .report-btn {
+      padding: 15px 30px;
+      font-size: 18px;
+      border: none;
+      border-radius: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      color: white;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+      transition: all 0.2s ease;
+      position: relative;
+    }
+    .bug { background: #FF5F6D; }
+    .saran { background: #6A82FB; }
+    .curhat { background: #FDC830; color: #333; }
+    .report-btn:hover {
+      transform: translateY(-5px) scale(1.05);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    }
+    .report-btn:active {
+      transform: scale(0.95);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+    .quote {
+      position: relative;
+      z-index: 1;
+      margin-top: 50px;
+      max-width: 800px;
+      font-size: 18px;
+      text-align: center;
+      color: #f0f0f0;
+      text-shadow: 0 2px 6px rgba(0,0,0,0.6);
+      line-height: 1.6;
+      padding: 0 20px;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(-20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+    .audio-player {
+      position: relative;
+      z-index: 1;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Report to Valen</h1>
+    <p>Valen Developer</p>
+    <div class="button-container">
+      <a class="report-btn bug" href="https://wa.me/6285256228909?text=Halo%20Valen,%20saya%20ingin%20melaporkan%20bug%20atau%20kesalahan%20bot." target="_blank">Melaporkan bug atau kesalahan bot</a>
+      <a class="report-btn saran" href="https://wa.me/6285256228909?text=Halo%20Valen,%20saya%20ingin%20memberikan%20saran." target="_blank">Saran kepada Valen</a>
+      <a class="report-btn curhat" href="https://wa.me/6285256228909?text=Halo%20Valen,%20saya%20ingin%20curhat%20dan%20menjadi%20teman%20cerita." target="_blank">Teman cerita</a>
+    </div>
+  </div>
+
+  <!-- Quote di bawah -->
+  <div class="quote">
+    “Ada seseorang yang membuatku jatuh cinta seutuhnya, memberi seluruh hatiku, lalu pergi tanpa kata. Dan aku belajar bahwa mencintai bukan tentang memilikinya, tapi mampu melepaskannya meski setiap bagian diriku hancur.”
+  </div>
+
+  <!-- Audio player -->
+  <div class="audio-player">
+    <audio controls autoplay loop>
+      <source src="https://www.dropbox.com/scl/fi/jjx1drnflmhs7gg2ri279/Hindia-everything-u-are-_-Lirik-Lagu.mp3?rlkey=os1mg92jpjr3sccpyby9x2mnf&st=c5f6tl7v&dl=1" type="audio/mpeg">
+      Browser kamu tidak mendukung audio.
+    </audio>
+  </div>
+</body>
+</html>
